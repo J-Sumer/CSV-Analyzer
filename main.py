@@ -26,4 +26,5 @@ arguments = {
     "Seperator": ","
 }
 
-updateCli(arguments)
+if __name__ == "__main__":
+    updateCli(arguments)
