@@ -1,5 +1,4 @@
-import re
-import cli
+from cli import *
 
 help = """
 CSV : summarized csv file
@@ -27,3 +26,4 @@ arguments = {
     "Seperator": ","
 }
 
+updateCli(arguments)
