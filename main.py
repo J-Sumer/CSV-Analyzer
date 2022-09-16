@@ -16,7 +16,7 @@ OPTIONS:
  -S  --Seperator feild seperator                       = , 
 """
 
-arguments = {
+the = {
     "eg": "nothing",
     "dump": False,
     "file": "test.csv",
@@ -27,4 +27,4 @@ arguments = {
 }
 
 if __name__ == "__main__":
-    updateCli(arguments)
+    updateCli(the)
