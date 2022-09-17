@@ -23,6 +23,15 @@ def runs(test):
             except:
                 print("!!!!!! ", "CRASH   ", test, "    false")
 
+def BAD():
+    print(eg.this_is_not_there)
+    
+def LIST():
+    print("Examples lua csv -e ...")
+    for key in eg:
+        print("\t" + key)
+    return True
+
 def ALL():
     for test in eg:
         if(test != "ALL"):
