@@ -55,6 +55,23 @@ def num():
     print(mid , "    ", div)
     return True 
 
+def bignum():
+    num = Num(0, "num")
+    oldNums = args["nums"]
+    updateValue("nums", 32)
+    for i in range(1,1000):
+        num.add(i)
+    printArr(num.nums())
+    retVal = len(num._has) == args["nums"]
+    updateValue("nums", oldNums)
+    return retVal
+
+def csv():
+    Lines = readCSV(args["file"])
+    for i in range(0,10):
+        printArr(Lines[i].split(args["Seperator"]))
+    return True
+
 def ALL():
     for test in eg:
         if(test != "ALL"):
