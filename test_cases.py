@@ -111,3 +111,19 @@ def ALL():
         if(test != "ALL"):
             print("\n-----------------------------------")
             runs(test)
+
+eg = {
+    "BAD": BAD,
+    "LIST": LIST,
+    "the": the,
+    "sym": sym,
+    "num": num,
+    "bignum": bignum,
+    "csv": csv,
+    "data": data,
+    "stats": stats,
+    "ALL": ALL
+}
+
+if __name__ == '__main__':
+    runs(args["eg"])
