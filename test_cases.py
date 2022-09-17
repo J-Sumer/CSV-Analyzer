@@ -32,6 +32,29 @@ def LIST():
         print("\t" + key)
     return True
 
+def the():
+    printDic(args)
+    return True
+
+def sym():
+    sym = Sym()
+    list = ["a","a","a","a","b","b","c"]
+    for x in list:
+        sym.add(x)
+    mode = sym.mid()
+    entropy = sym.div()
+    printDic({"mid": mode,"div": entropy})
+    return True
+
+def num():
+    num = Num(0, "num")
+    for i in range(1,101):
+        num.add(i)
+    mid = num.mid()
+    div = num.div()
+    print(mid , "    ", div)
+    return True 
+
 def ALL():
     for test in eg:
         if(test != "ALL"):
