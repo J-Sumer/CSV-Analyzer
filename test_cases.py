@@ -72,6 +72,40 @@ def csv():
         printArr(Lines[i].split(args["Seperator"]))
     return True
 
+def data():
+    data = Data(args["file"])
+    for num in data.nums:
+        if(num != 0):
+            new = vars(num).copy()
+            del new['_has']
+            printDic(new)
+    return True
+
+def stats():
+    data = Data(args["file"])
+    xmid = {}
+    xdiv = {}
+    ymid = {}
+    ydiv = {}
+    for sym in data.syms:
+        if(sym != 0):
+            xmid[sym.name] = sym.mid()
+            xdiv[sym.name] = sym.div()
+    for num in data.nums:
+        if(num != 0):
+            ymid[num.name] = num.mid()
+            ydiv[num.name] = num.div()
+    print("xmid", end="   ") 
+    printDic(xmid)
+    print("xdiv", end="   ") 
+    printDic(xdiv)
+    print("ymid", end="   ") 
+    printDic(ymid)
+    print("ydiv", end="   ") 
+    printDic(ydiv)
+    return True
+
+
 def ALL():
     for test in eg:
         if(test != "ALL"):
