@@ -15,16 +15,5 @@ OPTIONS:
  -s  --seed      random number seed                    = 10019
  -S  --Seperator feild seperator                       = , 
 """
-
-the = {
-    "eg": "nothing",
-    "dump": False,
-    "file": "test.csv",
-    "help": False,
-    "nums": 512,
-    "seed": 10019,
-    "Seperator": ","
-}
-
 if __name__ == "__main__":
-    updateCli(the)
+    updateCli(getArguments())

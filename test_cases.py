@@ -6,7 +6,7 @@ from Data import *
 
 updateCli()
 eg = {}
-args = getArguments()
+the = getArguments()
 
 def runs(test):
     out = False
@@ -33,7 +33,7 @@ def LIST():
     return True
 
 def the():
-    printDic(args)
+    printDic(the)
     return True
 
 def sym():
@@ -65,12 +65,6 @@ def bignum():
     retVal = len(num._has) == args["nums"]
     updateValue("nums", oldNums)
     return retVal
-
-def csv():
-    Lines = readCSV(args["file"])
-    for i in range(0,10):
-        printArr(Lines[i].split(args["Seperator"]))
-    return True
 
 eg = {
     "BAD": BAD,
